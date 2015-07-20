@@ -1,0 +1,95 @@
+{
+   "identifier":"publicacao",
+   "service": [{
+       "active": true,
+       "service_id": 2,
+       "name":"Novo serv",
+       "categories": [{
+           "cma_id": 9,
+           "message_single":"Teste de [[msg]] envio [[loo:10]]",
+           "message_multiple":"A sua receita #[[receita:25]]# foi preparada mais *[[quantidade]]* vezes.",
+           "name":"Notifica Teste",
+           "active": true,
+           "service_id": 2,
+           "identifier":"publicacao",
+           "apps": [{
+               "slug":"teste",
+               "identifier":"publicacao",
+               "app_id": 2,
+               "category_id": 9
+            }],
+           "slug":"notifica-teste",
+           "description":"Notifica teste"
+        }],
+       "slug":"novo-serv"
+    }, {
+       "active": true,
+       "service_id": 1,
+       "name":"teste2",
+       "categories": [{
+           "cma_id": 25,
+           "message_single":"A sua receita #[[receita:25]]# foi preparada por *[[usuario]]*.",
+           "message_multiple":"A sua receita #[[receita:25]]# foi preparada mais *[[quantidade]]* vezes.",
+           "name":"caca2",
+           "active": true,
+           "service_id": 1,
+           "identifier":"publicacao",
+           "apps": [{
+               "slug":"g1_android",
+               "identifier":"publicacao",
+               "app_id": 1,
+               "category_id": 25
+            }, {
+               "slug":"teste",
+               "identifier":"publicacao",
+               "app_id": 2,
+               "category_id": 25
+            }],
+           "slug":"caca",
+           "description":"vsdvmdlvmdlvmd;v"
+        }, {
+           "cma_id": 21,
+           "message_single":"A sua receita #[[receita:25]]# foi preparada por *[[usuario]]*.",
+           "message_multiple":"A sua receita #[[receita:25]]# foi preparada mais *[[quantidade]]* vezes.",
+           "name":"cksdmcklcmcmkwpc",
+           "active": true,
+           "service_id": 1,
+           "identifier":"publicacao",
+           "apps": [{
+               "slug":"g1_android",
+               "identifier":"publicacao",
+               "app_id": 1,
+               "category_id": 21
+            }, {
+               "slug":"teste",
+               "identifier":"publicacao",
+               "app_id": 2,
+               "category_id": 21
+            }],
+           "slug":"cksdmcklcmcmkwpc",
+           "description":"ndsvndsonowdnod"
+        }, {
+           "cma_id": 8,
+           "message_single":"A sua receita #[[receita:25]]# foi preparada por *[[usuario]]*.",
+           "message_multiple":"A sua receita #[[receita:25]]# foi preparada mais *[[quantidade]]* vezes.",
+           "name":"vkdsmvdvsdpv",
+           "active": true,
+           "service_id": 1,
+           "identifier":"publicacao",
+           "apps": [{
+               "slug":"g1_android",
+               "identifier":"publicacao",
+               "app_id": 1,
+               "category_id": 8
+            }, {
+               "slug":"teste",
+               "identifier":"publicacao",
+               "app_id": 2,
+               "category_id": 8
+            }],
+           "slug":"vkdsmvdvsdpv",
+           "description":"kdsmvkdsvndsp"
+        }],
+       "slug":"teste2"
+    }]
+}
