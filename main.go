@@ -6,6 +6,7 @@ import (
 
 	"github.com/bmizerany/pat"
 	"github.com/viniciusfeitosa/mongo/handlers"
+	"github.com/viniciusfeitosa/mongo/middlewares"
 	"gopkg.in/mgo.v2"
 )
 
@@ -14,7 +15,7 @@ func main() {
 	mux := pat.New()
 	mux.Get("/ping/cma/:identifier", http.HandlerFunc(cmaHandler.Get))
 	mux.Get("/ping/cma/all/:identifier", http.HandlerFunc(cmaHandler.FindAll))
-	mux.Post("/ping/cma/create", http.HandlerFunc(cmaHandler.Create))
+	mux.Post("/ping/cma/create", middlewares.CmaMiddleware(http.HandlerFunc(cmaHandler.Create)))
 	mux.Del("/ping/cma/remove/:identifier", http.HandlerFunc(cmaHandler.Delete))
 
 	log.Println("App start on port: 5000")

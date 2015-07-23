@@ -27,6 +27,10 @@ func (c *CmaHandler) Create(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 
+	if err := c.mongo.DB("pingo").C("cma").Remove(bson.M{"identifier": cma.Identifier}); err != nil {
+		log.Println(err)
+	}
+
 	cma.ID = bson.NewObjectId()
 	if err := c.mongo.DB("pingo").C("cma").Insert(cma); err != nil {
 		log.Println(err)
